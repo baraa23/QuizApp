@@ -331,6 +331,8 @@
             android:layout_margin="@dimen/buttonsLinearMargin"
             android:orientation="horizontal">
 
+            <!--submit button-->
+
             <Button
                 android:id="@+id/reset_button"
                 android:layout_width="wrap_content"
@@ -343,6 +345,7 @@
                 android:text="@string/reset"
                 android:textSize="@dimen/buttonsTextSize" />
 
+            <!--reset button-->
 
             <Button
                 android:id="@+id/submit_button"
@@ -352,15 +355,12 @@
                 android:layout_marginRight="@dimen/buttonsMargin"
                 android:layout_weight="1"
                 android:background="@color/buttons"
+                android:onClick="submitAnswers"
                 android:text="@string/submit"
-                android:onClick="sumbitAnswers"
                 android:textSize="@dimen/buttonsTextSize" />
-
 
         </LinearLayout>
 
-
     </LinearLayout>
-
 
 </ScrollView>

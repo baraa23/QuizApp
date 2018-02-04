@@ -3,8 +3,8 @@
     <dimen name="welcomeTextSize">25sp</dimen>
     <dimen name="sizeUsername">18sp</dimen>
     <dimen name="paddingRelative">12dp</dimen>
-    <dimen name="textSizeAnswers">16sp</dimen>
-    <dimen name="textSizeQuestions">18sp</dimen>
+    <dimen name="textSizeAnswers">18sp</dimen>
+    <dimen name="textSizeQuestions">20sp</dimen>
     <dimen name="margin8questions">8dp</dimen>
     <dimen name="lineHeight">1dp</dimen>
     <dimen name="viewMargin">10dp</dimen>

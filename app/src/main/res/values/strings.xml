@@ -25,5 +25,11 @@
     <string name="answer_q4_3">Sweden</string>
 <string name="reset">Reset</string>
     <string name="submit">Submit</string>
-    <string name="startmesaage">Congratulations</string>
+    <string name="congrats">Congratulations" "</string>
+    <string name="scoremessagestart">!\nYour score is &#160;</string>
+    <string name="scoremesaaageend">&#160; points out of&#160;</string>
+    <string name="messagewrongstart">Sorry" "</string>
+    <string name="messagewrongstart2">,\nYou received" "</string>
+    <string name="messagewrongmid">" "points out of" "</string>
+    <string name="messagewrongend">.\nTry again.</string>
 </resources>
