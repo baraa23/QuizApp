@@ -18,12 +18,26 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public static final int MAX_SCORE = 4;
+    RadioButton victory;
+    RadioButton burj;
+    CheckBox china;
+    CheckBox egypt;
+    CheckBox lebanon;
+    CheckBox sudan;
+    RadioButton sweden;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        victory = findViewById(R.id.q1_b);
+        burj = findViewById(R.id.q2_a);
+        china = findViewById(R.id.q3_a);
+        egypt = findViewById(R.id.q3_b);
+        lebanon = findViewById(R.id.q3_c);
+        sudan = findViewById(R.id.q3_d);
+        sweden = findViewById(R.id.q4_c);
 
     }
 
@@ -34,26 +48,12 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswers(View view) {
 
         int score = 0;
-
-        RadioButton victory = (RadioButton) findViewById(R.id.q1_b);
         boolean question1b = victory.isChecked();
-
-        RadioButton burj = (RadioButton) findViewById(R.id.q2_a);
         boolean question2a = burj.isChecked();
-
-        CheckBox china = (CheckBox) findViewById(R.id.q3_a);
         boolean question3a = china.isChecked();
-
-        CheckBox egypt = (CheckBox) findViewById(R.id.q3_b);
         boolean question3b = egypt.isChecked();
-
-        CheckBox lebanon = (CheckBox) findViewById(R.id.q3_c);
         boolean question3c = lebanon.isChecked();
-
-        CheckBox sudan = (CheckBox) findViewById(R.id.q3_d);
         boolean question3d = sudan.isChecked();
-
-        RadioButton sweden = (RadioButton) findViewById(R.id.q4_c);
         boolean question4d = sweden.isChecked();
 
         EditText yourName = (EditText) findViewById(R.id.user_name);
@@ -109,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return result;
-
     }
 
     /**
@@ -135,17 +134,10 @@ public class MainActivity extends AppCompatActivity {
         group3.clearCheck();
 
         //clear check boxes
-        CheckBox checkbox1 = findViewById(R.id.q3_a);
-        checkbox1.setChecked(false);
-
-        CheckBox checkbox2 = findViewById(R.id.q3_b);
-        checkbox2.setChecked(false);
-
-        CheckBox checkbox3 = findViewById(R.id.q3_c);
-        checkbox3.setChecked(false);
-
-        CheckBox checkbox4 = findViewById(R.id.q3_d);
-        checkbox4.setChecked(false);
+        china.setChecked(false);
+        egypt.setChecked(false);
+        lebanon.setChecked(false);
+        sudan.setChecked(false);
 
     }
 

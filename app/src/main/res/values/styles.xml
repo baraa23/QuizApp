@@ -8,4 +8,66 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="scrollView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/textureback</item>
+        <item name="android:padding">@dimen/paddingRelative</item>
+    </style>
+
+    <style name="mainLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="usernameStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/linearLayoutMargin</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:hint">@string/yourName</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sizeUsername</item>
+    </style>
+
+    <style name="questionLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/linearLayoutMargin</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="view">
+        modify the line
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lineHeight</item>
+        <item name="android:layout_margin">@dimen/viewMargin</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="buttonsLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/buttonsLinearMargin</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/buttonsMargin</item>
+        <item name="android:layout_marginRight">@dimen/buttonsMargin</item>
+        <item name="android:background">@color/buttons</item>
+        <item name="android:textSize">@dimen/buttonsTextSize</item>
+    </style>
+
 </resources>
