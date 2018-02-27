@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
      * (made as the final project for Udacity/Google Challenge Scholarship: Android Basics)
      */
 
-    public static final int MAX_SCORE = 4;
+    public static final int MAX_SCORE = 5;
     RadioButton victory;
     RadioButton burj;
     CheckBox china;
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox lebanon;
     CheckBox sudan;
     RadioButton sweden;
+    EditText istanbul;
 
 
     @Override
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         lebanon = findViewById(R.id.q3_c);
         sudan = findViewById(R.id.q3_d);
         sweden = findViewById(R.id.q4_c);
+        istanbul = findViewById(R.id.question_5);
 
     }
 
@@ -55,11 +57,12 @@ public class MainActivity extends AppCompatActivity {
         boolean question3c = lebanon.isChecked();
         boolean question3d = sudan.isChecked();
         boolean question4d = sweden.isChecked();
+        String answer5 = istanbul.getText().toString();
 
         EditText yourName = (EditText) findViewById(R.id.user_name);
         String editTextName = yourName.getText().toString();
 
-        score = calculateScore(question1b, question2a, question3a, question3b, question3c, question3d, question4d);
+        score = calculateScore(question1b, question2a, question3a, question3b, question3c, question3d, question4d, answer5);
 
         Context context = getApplicationContext();
         CharSequence text = getString(R.string.congrats) + editTextName + getString(R.string.scoremessagestart)
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 + score + getString(R.string.messagewrongmid) + MAX_SCORE + getString(R.string.messagewrongend);
 
 
-        if (score >= 4) {
+        if (score >= 5) {
             Toast.makeText(context, text, Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(contextwrong, textwrong, Toast.LENGTH_LONG).show();
@@ -81,17 +84,18 @@ public class MainActivity extends AppCompatActivity {
     /**
      * this method to calculate the score and return it
      *
-     * @param ques1  right answer for question 1 radiobutton
-     * @param ques2  right answer for question 2 radiobutton
-     * @param ques3a wrong answer for question 3 checkbox
-     * @param ques3b right answer for question 3 checkbox
-     * @param ques3c wrong answer for question 3 checkbox
-     * @param ques3d right answer for question 3 checkbox
-     * @param ques4d right answer for question 4 radiobutton
+     * @param ques1   right answer for question 1 radiobutton
+     * @param ques2   right answer for question 2 radiobutton
+     * @param ques3a  wrong answer for question 3 checkbox
+     * @param ques3b  right answer for question 3 checkbox
+     * @param ques3c  wrong answer for question 3 checkbox
+     * @param ques3d  right answer for question 3 checkbox
+     * @param ques4d  right answer for question 4 radiobutton
+     * @param answer5 right answer for question 5 EditText
      * @return return the score
      */
 
-    private int calculateScore(boolean ques1, boolean ques2, boolean ques3a, boolean ques3b, boolean ques3c, boolean ques3d, boolean ques4d) {
+    private int calculateScore(boolean ques1, boolean ques2, boolean ques3a, boolean ques3b, boolean ques3c, boolean ques3d, boolean ques4d, String answer5) {
         int result = 0;
 
         if (ques1) {
@@ -108,6 +112,11 @@ public class MainActivity extends AppCompatActivity {
             result++;
         }
 
+        if (answer5.equalsIgnoreCase(getString(R.string.answer5))) {
+            result++;
+        }
+
+
         return result;
     }
 
@@ -122,6 +131,9 @@ public class MainActivity extends AppCompatActivity {
         //clear edit text
         EditText username = (EditText) findViewById(R.id.user_name);
         username.getText().clear();
+
+        //clear answer for q5 (editText)
+        istanbul.getText().clear();
 
         //clear radio groups
         RadioGroup group1 = findViewById(R.id.radio_1);

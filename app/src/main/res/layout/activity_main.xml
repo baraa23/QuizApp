@@ -186,9 +186,6 @@
 
         <LinearLayout style="@style/questionLinearLayout">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -239,6 +236,42 @@
                     android:textSize="@dimen/textSizeAnswers" />
 
             </RadioGroup>
+
+        </LinearLayout>
+
+        <View style="@style/view">
+
+        </View>
+
+        <LinearLayout style="@style/questionLinearLayout">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin8questions"
+                android:layout_marginRight="@dimen/margin8questions"
+                android:text="@string/question_5"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/sizeUsername" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin8questions"
+                android:text="@string/q5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeQuestions" />
+
+            <EditText
+                android:id="@+id/question_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin8questions"
+                android:layout_marginRight="@dimen/margin8questions"
+                android:hint="@string/hint_edit_q5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeAnswers" />
 
         </LinearLayout>
 

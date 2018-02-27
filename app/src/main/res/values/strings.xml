@@ -23,7 +23,7 @@
     <string name="answer_q4_1">Denmark</string>
     <string name="answer_q4_2">Norway</string>
     <string name="answer_q4_3">Sweden</string>
-<string name="reset">Reset</string>
+    <string name="reset">Reset</string>
     <string name="submit">Submit</string>
     <string name="congrats">Congratulations" "</string>
     <string name="scoremessagestart">!\nYour score is &#160;</string>
@@ -32,4 +32,8 @@
     <string name="messagewrongstart2">,\nYou received" "</string>
     <string name="messagewrongmid">" "points out of" "</string>
     <string name="messagewrongend">.\nTry again.</string>
+    <string name="question_5">Question 5</string>
+    <string name="hint_edit_q5">type your answer</string>
+    <string name="q5">Constantinople is the former name of which Asian city?</string>
+    <string name="answer5">istanbul</string>
 </resources>
